@@ -431,4 +431,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
