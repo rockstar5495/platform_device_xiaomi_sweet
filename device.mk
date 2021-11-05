@@ -431,4 +431,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
+# Enable gestural navigation overlay to match default navigation mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
