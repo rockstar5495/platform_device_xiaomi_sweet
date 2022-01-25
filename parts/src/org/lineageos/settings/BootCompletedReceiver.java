@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.;
+package org.lineageos.settings;
 
 import android.provider.Settings;
 import android.content.BroadcastReceiver;
