@@ -38,3 +38,6 @@ persist.sys.fflag.override.settings_provider_model=false
 # ADB on boot
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
+
+# FM
+hw.fm.init=0
