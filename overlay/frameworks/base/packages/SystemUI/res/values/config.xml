@@ -68,4 +68,7 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <!-- Whether burn in of statusbar/navbar is supported -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 </resources>
