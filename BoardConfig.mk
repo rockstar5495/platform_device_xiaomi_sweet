@@ -142,6 +142,7 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # FM
 BOARD_HAVE_QCOM_FM := true
+TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
