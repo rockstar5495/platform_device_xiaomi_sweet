@@ -1,4 +1,5 @@
-# Unpinned section - from MIUI v12.5.8.0 RKFMIXM
+# Unpinned section - from MIUI v13.0.2.0 SKFMIXM
+
 # odm
 odm/etc/media_profiles_V1_0.xml
 
