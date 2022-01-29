@@ -189,9 +189,8 @@ PRODUCT_BOOT_JARS += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    fm-commonsys \
-    libfmjni
+    FM2 \
+    qcom.fmradio
 
 # Soong namespaces
 PRODUCT_BOARD_PLATFORM := sm6150
