@@ -16,10 +16,8 @@ $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Octavi Stuff
 OCTAVI_BUILD_TYPE := Official
-OCTAVI_DEVICE_MAINTAINER := ~Pratyaksh.Bharadwaj~
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
 
 # Device Identifier, to be come after all inclusions
 PRODUCT_NAME := octavi_sweet
