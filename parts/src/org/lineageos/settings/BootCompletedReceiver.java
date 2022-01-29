@@ -30,6 +30,7 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.settings.Constants;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.utils.DisplayUtils;
+import org.lineageos.settings.utils.RefreshRateUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -40,5 +41,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DisplayUtils.setDcDimmingStatus(sharedPreferences.getBoolean(Constants.KEY_DC_DIMMING, false));
         DisplayUtils.updateRefreshRateSettings(context);
         DiracUtils.initialize(context);
+        RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(context));
     }
 }
