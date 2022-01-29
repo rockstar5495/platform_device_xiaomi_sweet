@@ -17,7 +17,6 @@
 package org.lineageos.settings;
 
 import android.content.Context;
-import android.os.PowerManager;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
@@ -47,9 +46,12 @@ public class RefreshRateTileService extends TileService {
         currentRefreshRate = Arrays.asList(refreshRateValues).indexOf(Integer.toString(RefreshRateUtils.getRefreshRate(context)));
     }
 
-    private void updateTileDescription() {
-        tile.setContentDescription(refreshRates[currentRefreshRate]);
-        tile.setSubtitle(refreshRates[currentRefreshRate]);
+    private void updateTileState() {
+        if (currentRefreshRate == 1) {
+            getQsTile().setState(Tile.STATE_ACTIVE);
+        } else {
+            getQsTile().setState(Tile.STATE_INACTIVE);
+        }
         tile.updateTile();
     }
 
@@ -57,18 +59,8 @@ public class RefreshRateTileService extends TileService {
     public void onStartListening() {
         super.onStartListening();
         tile = getQsTile();
-        PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
-        if (RefreshRateUtils.getPowerSaveRefreshRateSwitch(context) && pm.isPowerSaveMode()) {
-            String disableText = context.getResources().getString(R.string.refresh_rate_tile_disabled);
-            tile.setState(Tile.STATE_UNAVAILABLE);
-            tile.setSubtitle(disableText);
-            tile.setContentDescription(disableText);
-            tile.updateTile();
-        } else {
-            tile.setState(Tile.STATE_ACTIVE);
-            updateCurrentRefreshRate();
-            updateTileDescription();
-        }
+        updateCurrentRefreshRate();
+        updateTileState();
     }
 
     private int getRefreshRateVal() {
@@ -79,13 +71,13 @@ public class RefreshRateTileService extends TileService {
     public void onClick() {
         super.onClick();
         updateCurrentRefreshRate();
-        if (currentRefreshRate == refreshRates.length - 1) {
+        if (currentRefreshRate == 1) {
             currentRefreshRate = 0;
         } else {
-            currentRefreshRate++;
+            currentRefreshRate = 1;
         }
         RefreshRateUtils.setRefreshRate(context, getRefreshRateVal());
         RefreshRateUtils.setFPS(getRefreshRateVal());
-        updateTileDescription();
+        updateTileState();
     }
 }
