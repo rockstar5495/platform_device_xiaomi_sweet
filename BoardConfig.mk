@@ -179,4 +179,4 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 TARGET_DISABLED_UBWC := true
 
 # Inherit from ANXCamera vendor
-include vendor/ANXCamera/BoardConfigAnx.mk
+include vendor/miuicamera/BoardConfigVendor.mk

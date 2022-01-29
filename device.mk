@@ -8,7 +8,7 @@
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Inherit from ANX Camera
-$(call inherit-product, vendor/ANXCamera/anx-vendor.mk)
+$(call inherit-product, vendor/miuicamera/config.mk)
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
