@@ -2248,6 +2248,7 @@
   <apn carrier="Airtel Live" mcc="404" mnc="96" apn="airtelfun.com" proxy="100.1.200.99" port="8080" type="default,supl" />
   <apn carrier="Airtel MMS" mcc="404" mnc="96" apn="airtelmms.com" mmsc="http://100.1.201.171:10021/mmsc" mmsproxy="100.1.201.172" mmsport="8799" type="mms" />
   <apn carrier="IMS" mcc="404" mnc="96" apn="ims" type="ims" protocol="IPV4V6" />
+  <apn carrier="Airtel GPRS" mcc="404" mnc="97" apn="airtelgrps.com" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" /> 
   <apn carrier="Airtel Live" mcc="404" mnc="97" apn="airtelfun.com" proxy="100.1.200.99" port="8080" type="default,supl" />
   <apn carrier="Airtel MMS" mcc="404" mnc="97" apn="airtelmms.com" mmsc="http://100.1.201.171:10021/mmsc" mmsproxy="100.1.201.172" mmsport="8799" type="mms" />
   <apn carrier="IMS" mcc="404" mnc="97" apn="ims" type="ims" protocol="IPV4V6" />
