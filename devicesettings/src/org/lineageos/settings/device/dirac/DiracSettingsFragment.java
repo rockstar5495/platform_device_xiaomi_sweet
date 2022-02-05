@@ -37,8 +37,8 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_HIFI = "dirac_hifi_pref";
     private static final String PREF_PRESET = "dirac_preset_pref";
-    private static final String PREF_ENABLE = "dirac_enable_pref";
 
+    private MainSwitchPreference mSwitchBar;
 
     private ListPreference mHeadsetType;
     private ListPreference mPreset;
@@ -89,15 +89,6 @@ public class DiracSettingsFragment extends PreferenceFragment implements
             default:
                 return false;
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            getActivity().onBackPressed();
-            return true;
-        }
-        return false;
     }
 
     @Override
