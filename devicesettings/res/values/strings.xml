@@ -21,6 +21,31 @@
     <string name="enable_high_refresh_rate_summary">Enable high refresh rate for a smoother experience</string>
     <string name="current_refresh_rate_info">Maximum / minimum refresh rate: <xliff:g id="version">%1$s</xliff:g>Hz - <xliff:g id="version">%2$s</xliff:g>Hz</string>
 
+    <!-- Ambient Display -->
+    <string name="ambient_display_title">Ambient Display</string>
+    <string name="ambient_display_always_on_title">Always on Display</string>
+    <string name="ambient_display_always_on_summary">Shows time, notification icons and other info. Increased battery usage</string>
+
+    <!-- Wake on Gesture -->
+    <string name="wake_on_gesture_title">Wake up on gestures</string>
+    <string name="wake_on_gesture_summary">Wake up device instead pulsing notification on gestures</string>
+
+    <!-- Pick up Gesture -->
+    <string name="pickup_sensor_title">Pickup sensor</string>
+    <string name="pick_up_gesture_title">Pickup getures</string>
+    <string name="pick_up_gesture_summary">Pulse notification on pickup</string>
+
+    <!-- Proximity Sensor -->
+    <string name="proximity_sensor_title">Proximity sensor</string>
+
+    <!-- Hand wave gestures -->
+    <string name="hand_wave_gesture_title">Hand wave</string>
+    <string name="hand_wave_gesture_summary">Pulse notifications on hand wave gestures</string>
+
+    <!-- Pocket gesture -->
+    <string name="pocket_gesture_title">Pocket</string>
+    <string name="pocket_gesture_summary">Pulse notification on removal from pocket</string>
+
     <string name="display_title">Display</string>
     <string name="dc_dimming_title">DC Dimming</string>
     <string name="dc_dimming_summary">Enable DC Dimming to avoid screen flickering on low brightness levels</string>
