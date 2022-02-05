@@ -22,6 +22,7 @@
     <string name="current_refresh_rate_info">Maximum / minimum refresh rate: <xliff:g id="version">%1$s</xliff:g>Hz - <xliff:g id="version">%2$s</xliff:g>Hz</string>
 
     <!-- Ambient Display -->
+    <string name="ambient_enable">Use Ambient Display</string>
     <string name="ambient_display_title">Ambient Display</string>
     <string name="ambient_display_always_on_title">Always on Display</string>
     <string name="ambient_display_always_on_summary">Shows time, notification icons and other info. Increased battery usage</string>
@@ -52,7 +53,7 @@
 
     <string name="sound_title">Sound</string>
 
-    <string name="dirac_enable">Enable sound enhancement</string>
+    <string name="dirac_enable">Enable Dirac</string>
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_summary">Configure sound presets, headset types and more</string>
     <string name="dirac_headset_title">Headset type</string>
