@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-<<<<<<< HEAD
 /*
 ** Copyright 2015, The Android Open Source Project
 **
@@ -31,7 +30,7 @@
     <bool name="config_batteryInQSPanel">false</bool>
 
     <!-- Whether usage of the proximity sensor during doze is supported -->
-    <bool name="doze_proximity_sensor_supported">false</bool>
+    <bool name="doze_proximity_sensor_supported">true</bool>
 
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
