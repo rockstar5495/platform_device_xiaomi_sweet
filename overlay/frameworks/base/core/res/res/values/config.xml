@@ -554,4 +554,7 @@
 
     <!-- Whether to check proximity sensor while dozing -->
     <bool name="doze_proximity_check_before_pulse">true</bool>
+
+    <!-- Defines the sysfs attributes path used by the device to enable/disable DC dimming -->
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable</string>
 </resources>
