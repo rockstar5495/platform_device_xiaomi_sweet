@@ -11,5 +11,5 @@ public class Constants {
     public static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable";
     public static final String BRIGHTNESS_NODE = "/sys/class/backlight/panel0-backlight/brightness";
 
-    public static final String DEFAULT_REFRESH_RATE_CONFIG = "120-120";
+    public static final String DEFAULT_REFRESH_RATE_CONFIG = "60-60";
 }
