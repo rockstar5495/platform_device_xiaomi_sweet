@@ -36,6 +36,10 @@
     <string name="pick_up_gesture_title">Pickup getures</string>
     <string name="pick_up_gesture_summary">Pulse notification on pickup</string>
 
+    <!-- Raise to wake strings-->
+    <string name="raise_to_wake_gesture_title">Raise to wake</string>
+    <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
+
     <!-- Proximity Sensor -->
     <string name="proximity_sensor_title">Proximity sensor</string>
 
