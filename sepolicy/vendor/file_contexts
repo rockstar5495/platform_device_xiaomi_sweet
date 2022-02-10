@@ -13,20 +13,20 @@
 /persist(/.*)?           u:object_r:persist_file:s0
 
 # Touchfeature
-/dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
+/dev/xiaomi-touch							u:object_r:touchfeature_device:s0
 
 # Infrared
 /dev/ir_spi u:object_r:ir_device:s0
 
 # Xiaomi thermal daemon
-/vendor/bin/mi_thermald                                              u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                                           u:object_r:thermal_data_file:s0
+/vendor/bin/mi_thermald							u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?						u:object_r:thermal_data_file:s0
 
 # Dc Dimming
-/sys/devices/platform/soc/ae00000\.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param u:object_r:sysfs_dm:s0
+/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable		u:object_r:sysfs_dm:s0
 
 # Battery secret
-/vendor/bin/batterysecret                                         u:object_r:batterysecret_exec:s0
+/vendor/bin/batterysecret						u:object_r:batterysecret_exec:s0
 
 # Persist subsystem
-/mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
+/mnt/vendor/persist/subsys(/.*)?					u:object_r:persist_subsys_file:s0

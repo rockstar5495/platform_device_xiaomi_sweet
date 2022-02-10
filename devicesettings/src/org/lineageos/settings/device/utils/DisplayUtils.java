@@ -13,7 +13,7 @@ import org.lineageos.settings.device.utils.FileUtils;
 
 public class DisplayUtils {
     public static void setDcDimmingStatus(boolean enabled) {
-        FileUtils.writeLine(Constants.DISPPARAM_NODE, enabled ? Constants.DISPPARAM_DC_ON : Constants.DISPPARAM_DC_OFF);
+        FileUtils.writeLine(Constants.DC_DIMMING_NODE, enabled ? "1" : "0");
 
         // Update the brightness node so dc dimming updates its state
         FileUtils.writeLine(Constants.BRIGHTNESS_NODE, FileUtils.readOneLine(Constants.BRIGHTNESS_NODE));
