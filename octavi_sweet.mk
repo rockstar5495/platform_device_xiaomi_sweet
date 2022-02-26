@@ -19,6 +19,7 @@ OCTAVI_BUILD_TYPE := Official
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device Identifier, to be come after all inclusions
 PRODUCT_NAME := octavi_sweet
