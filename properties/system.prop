@@ -22,7 +22,7 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 persist.sys.fflag.override.settings_provider_model=false
 
 # Volume steps
-ro.config.media_vol_steps=15
+ro.config.media_vol_steps=25
 
 # VoLTE
 persist.dbg.volte_avail_ovr=1
