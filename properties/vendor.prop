@@ -17,7 +17,7 @@ ro.vendor.sf.detect.aod.enable=true
 ro.vendor.display.type=oled
 
 # Apex
-ro.apex.updatable=true
+ro.apex.updatable=false
 
 # Audio
 av.offload.enable=true
