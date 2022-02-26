@@ -211,16 +211,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libdisplayconfig.qti \
-    libminijail \
-    libnl \
-    libqdMetaData \
-    libwfdaac_vendor \
-    vendor.display.config@2.0
-
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \

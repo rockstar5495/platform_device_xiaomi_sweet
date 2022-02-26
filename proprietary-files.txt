@@ -1792,31 +1792,11 @@ vendor/lib/libwapi_cert.so
 vendor/lib/libmdmdetect.so
 vendor/lib/liblowi_client.so
 vendor/lib/liblowi_wifihal.so
+vendor/lib/libFileMux_proprietary.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libwapi_cert.so
 vendor/lib64/libmdmdetect.so
-
-# WifiDisplay
-system_ext/lib/libmmosal.so
-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/etc/seccomp_policy/wfdhdcphalservice.policy
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib/libmmrtpdecoder_proprietary.so
-vendor/lib/libmmrtpencoder_proprietary.so
-vendor/lib/libmmosal.so
-vendor/lib/libmiracast.so
-vendor/lib/libFileMux_proprietary.so
-vendor/lib64/libmmosal.so
-vendor/lib64/libmiracast.so
-vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 
 # Misc
