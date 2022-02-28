@@ -290,6 +290,12 @@ vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
+# Bluetooth (LDAC) - From Sweet - MIUI 13.0.4.0 SKFMIXM
+system_ext/lib/libldacBT_abr.so|0fa74e2d405b5b98034214cb12a516a9269b5522
+system_ext/lib/libldacBT_enc.so|5f22c53411f50ff8fe75ab9010393f7d2ad68471
+system_ext/lib64/libldacBT_abr.so|2f0607e051f8901e47e1b212390246968f9ae0cb
+system_ext/lib64/libldacBT_enc.so|fb6f1f186d93ff5646da115c45a228d27f667156
+
 # CNE
 -vendor/app/CACertService/CACertService.apk
 vendor/app/CACertService/oat/arm64/CACertService.odex
