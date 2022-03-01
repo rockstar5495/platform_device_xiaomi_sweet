@@ -660,6 +660,24 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/libmmcamera_cac3.so
 
+# Camera prebuilt services - from MIUI 13.0.4.0 SKFMIXM
+vendor/lib/camera.device@1.0-impl.so|06025579f580a69a86c2d7e364ce813569b95c33
+vendor/lib/camera.device@3.2-impl.so|48052bad939808890de8255f06f4ff5178464bd0
+vendor/lib/camera.device@3.3-impl.so|66545c8eaf7cafb98960355a474b01d214561387
+vendor/lib/camera.device@3.4-external-impl.so|8492db7eedb2c0ea6f17fccf1e3e95cbd5b6701d
+vendor/lib/camera.device@3.4-impl.so|12fdfbfc3325bca0a2dfda28407a32eaac1356eb
+vendor/lib/camera.device@3.5-external-impl.so|51f72c739a421550beae9b56795a60ce3a9b12b3
+vendor/lib/camera.device@3.5-impl.so|5696950b883634ab99d183231d52e6f70fcc614c
+vendor/lib/camera.device@3.6-external-impl.so|c8bf77af435fba0dc1ad1a6fce062da6d2b77c44
+vendor/lib64/camera.device@1.0-impl.so|fa5638db4762fc4544ab86c1fcd4a43831f1c57c
+vendor/lib64/camera.device@3.2-impl.so|890e2d1484d7e8c5ffbca264f4e45dede5d9f594
+vendor/lib64/camera.device@3.3-impl.so|b13f6435fc61af536ec755d58b0edfefe1cf0a8a
+vendor/lib64/camera.device@3.4-external-impl.so|62150d0ceeea12c35344eff3d87ee17832b4fb13
+vendor/lib64/camera.device@3.4-impl.so|a18dfcc8f1dc59b934e489ed00ebe797b30ae670
+vendor/lib64/camera.device@3.5-external-impl.so|b3a6500ca3f257c7d8108c455c5238060a6f0817
+vendor/lib64/camera.device@3.5-impl.so|787e40272ea06910946e44af20c0786d662b84e3
+vendor/lib64/camera.device@3.6-external-impl.so|4b13adb315091237077fb323ac818e54fa249f0c
+
 # Camera prebuilt services
 vendor/lib/vendor.qti.hardware.camera.device@2.0.so
 vendor/lib/vendor.qti.hardware.camera.device@3.5.so
