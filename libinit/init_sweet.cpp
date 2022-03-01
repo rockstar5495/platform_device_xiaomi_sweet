@@ -64,25 +64,79 @@ void full_property_override(const std::string &prop, const char value[], const b
     }
 }
 
-void vendor_load_properties() {
-    const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
-    const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
+std::vector<std::string> ro_props_default_source_order = {
+    "",
+    "bootimage.",
+    "odm.",
+    "product.",
+    "system.",
+    "system_ext.",
+    "vendor.",
+};
 
-    std::string marketname =
-       !(!is_global && is_pro) ? "Redmi Note 10 Pro" : "Redmi Note 10 Pro Max";
-    const std::string mod_device = is_global ? "sweet_eea_global" : "sweetin_in_global";
-
-    property_override("ro.boot.verifiedbootstate", "green");
-
-    for (int i = 0; i <= 1; i++) {
-        full_property_override("model", is_global ? "M2101K6G" :
-            (is_pro ? "M2101K6I" : "M2101K6P"), i);
-        full_property_override("device", is_global ? "sweet" : "sweetin", i);
-        full_property_override("name", is_global ? "sweet" : "sweetin", i);
+void set_ro_build_prop(const std::string &prop, const std::string &value) {
+    for (const auto &source : ro_props_default_source_order) {
+        auto prop_name = "ro." + source + "build." + prop;
+        if (source == "")
+            property_override(prop_name.c_str(), value.c_str());
+        else
+            property_override(prop_name.c_str(), value.c_str(), false);
     }
+};
 
+void set_ro_product_prop(const std::string &prop, const std::string &value) {
+    for (const auto &source : ro_props_default_source_order) {
+        auto prop_name = "ro.product." + source + prop;
+        property_override(prop_name.c_str(), value.c_str(), false);
+    }
+};
+
+void vendor_load_properties() {
+    std::string region;
+    std::string sku;
+    region = GetProperty("ro.boot.hwc", "GLOBAL");
+    sku = GetProperty("ro.boot.product.hardware.sku","pro");
+
+    std::string model;
+    std::string device;
+    std::string fingerprint;
+    std::string description;
+    std::string marketname;
+    std::string mod_device;
+
+    if (region == "GLOBAL") {
+        model = "M2101K6G";
+        device = "sweet";
+        fingerprint = "Redmi/sweet_global/sweet:11/RKQ1.200826.002/V12.0.6.0.RKFMIXM:user/release-keys";
+        description = "sweet_global-user 11 RKQ1.200826.002 V12.0.6.0.RKFMIXM release-keys";
+        marketname = "Redmi Note 10 Pro";
+        mod_device = "sweet_global";
+    } else if (region == "INDIA") {
+        if (sku == "std") {
+            model = "M2101K6P";
+            device = "sweetin";
+            fingerprint = "Redmi/sweetin/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
+            description = "sweetin-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+            marketname = "Redmi Note 10 Pro";
+            mod_device = "sweetin_in_global";
+        } else {
+                model = "M2101K6I";
+                device = "sweetin";
+                fingerprint = "Redmi/sweetinpro/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
+                description = "sweetinpro-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+                marketname = "Redmi Note 10 Pro Max";
+                mod_device = "sweetin_in_global";
+            }
+        }
+
+set_ro_build_prop("fingerprint", fingerprint);
+    set_ro_product_prop("device", device);
+    set_ro_product_prop("model", model);
     property_override("ro.product.marketname", marketname.c_str());
-    property_override("ro.product.mod_device", mod_device.c_str());
+    property_override("ro.build.description", description.c_str());
+    if (mod_device != "") {
+        property_override("ro.product.mod_device", mod_device.c_str());
+    }
 
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
