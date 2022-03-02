@@ -40,4 +40,4 @@ ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
 # Aux Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera
