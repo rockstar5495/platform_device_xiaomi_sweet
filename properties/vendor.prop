@@ -229,6 +229,7 @@ ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 # Dolby
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
+ro.vendor.dolby.dax.version=DAX3_3.5.6.11_r1
 
 # FM Radio
 vendor.hw.fm.init=0
