@@ -1,5 +1,20 @@
 # Unpinned section - from MIUI v13.0.2.0 SKFMIXM
 
+# ADSP - from MIUI 13.0.4.0 SKFMIXM
+vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so|f624829796c1190b0156873d2620a62ea946e383
+vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so|0d46522555fa04a0097043121fdb1306f8f00537
+vendor/lib64/libarcsoft_beautyshot.so|b6af67ecf697de11cb9953dbf3bd22013c56f489
+vendor/lib64/libarcsoft_distortion_correction.so|86a6cf76276688aa5b658fd4c9721db84376e355
+vendor/lib64/libarcsoft_dualcam_refocus_front.so|b2703e5b5e13b517bc3f96b6aab8a8387469ef46
+vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so|56f9416b390c614f891176e462a7b9ff9f38cf61
+vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so|a3546a3c288c7290ef1469db968769c12544584f
+vendor/lib64/libarcsoft_dualcam_refocus.so|136857abdb09b506fecc23d24dcf43d867810e5c
+vendor/lib64/libarcsoft_hta.so|96cbb6b6ea248a513fda0febcffe4f305ef1cc60
+vendor/lib64/libarcsoft_portrait_lighting_c.so|ca42fa6fc25e231ca70e1caf80a08b18ccfd3d99
+vendor/lib64/libarcsoft_portrait_lighting.so|1bc7b14fe69e617529e4dda74e4ef1081ea2ada0
+vendor/lib64/libarcsoft_preview_deflicker.so|6f1da5473c0b79e99da1d2ea27db736f06931774
+vendor/lib64/libarcsoft_super_night_raw.so|912fef457e7c7cc76c22cb2597bf188b3c6cc9f4
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
@@ -11,8 +26,6 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libarc_hta_driver_skel.so
-vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
-vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libdirac-capiv2.so
@@ -78,17 +91,6 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libcdsprpc_system.so
-vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_distortion_correction.so
-vendor/lib64/libarcsoft_dualcam_refocus_front.so
-vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
-vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
-vendor/lib64/libarcsoft_dualcam_refocus.so
-vendor/lib64/libarcsoft_hta.so
-vendor/lib64/libarcsoft_portrait_lighting_c.so
-vendor/lib64/libarcsoft_portrait_lighting.so
-vendor/lib64/libarcsoft_preview_deflicker.so
-vendor/lib64/libarcsoft_super_night_raw.so
 
 # ACDBData -  From MIUI V12.0.15.0 RKFMIXM
 vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
