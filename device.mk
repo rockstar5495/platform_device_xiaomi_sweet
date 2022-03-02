@@ -225,9 +225,6 @@ PRODUCT_PACKAGES += \
     libshim_megvii \
     GCam
 
-PRODUCT_PACKAGES += \
-    CutoutRingServiceSweet
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
