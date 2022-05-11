@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI v13.0.2.0 SKFMIXM
+# Unpinned section - from MIUI v13.0.7.0 SKFMIXM
 
 # ADSP - from MIUI 13.0.4.0 SKFMIXM
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so|f624829796c1190b0156873d2620a62ea946e383
