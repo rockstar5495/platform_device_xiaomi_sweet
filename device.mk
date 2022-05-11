@@ -114,7 +114,9 @@ PRODUCT_PACKAGES += \
     Tag \
     SecureElement \
     com.android.nfc_extras \
-    android.hardware.nfc@1.2.vendor
+    android.hardware.nfc@1.2.vendor \
+    vendor.nxp.hardware.nfc@2.0-service \
+    vendor.nxp.nxpnfclegacy@1.0
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
