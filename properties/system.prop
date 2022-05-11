@@ -8,12 +8,6 @@ persist.vendor.camera.facepp.fdenable=0
 # Display
 ro.sf.lcd_density=440
 
-# Octavi
-ro.octavi.maintainer=pbharadwaj_95
-ro.octavi.display.pid=1530755
-ro.octavi.hw.cam=64MP/108MP,8MP,5MP,2MP:16MP
-ro.octavi.hw.cpu=Snapdragon 732G (8nm)/SM6150
-
 # One handed mode
 ro.support_one_handed_mode=true
 
