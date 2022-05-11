@@ -44,3 +44,8 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.andr
 
 # Privapp list
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera
+
+# Blurs
+ro.surface_flinger.supports_background_blur=1 
+persist.sys.sf.disable_blurs=1 
+ro.sf.blurs_are_expensive=1
