@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_sweet.mk
+    $(LOCAL_DIR)/blaze_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_sweet-eng \
-    octavi_sweet-userdebug \
-    octavi_sweet-user
+    blaze_sweet-eng \
+    blaze_sweet-userdebug \
+    blaze_sweet-user
