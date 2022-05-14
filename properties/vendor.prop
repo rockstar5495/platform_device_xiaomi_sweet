@@ -462,7 +462,7 @@ debug.egl.hw=0
 debug.sf.set_idle_timer_ms=3000
 
 # Volume
-ro.config.vc_call_vol_steps=11
+ro.config.vc_call_vol_steps=15
 
 # WLAN
 ro.wlan.vendor=qcom
