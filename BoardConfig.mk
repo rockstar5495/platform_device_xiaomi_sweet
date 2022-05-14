@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from ANXCamera vendor
-include vendor/ANXCamera/BoardConfigAnx.mk
-
 DEVICE_PATH := device/xiaomi/sweet
 BOARD_VENDOR := xiaomi
 

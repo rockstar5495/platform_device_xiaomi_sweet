@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from ANXCamera
-$(call inherit-product, vendor/ANXCamera/anx-vendor.mk)
-
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
