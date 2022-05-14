@@ -1,11 +1,7 @@
 # HALs
-/vendor/bin/hw/android\.hardware\.lights-service\.sweet				u:object_r:hal_light_default_exec:s0
-/vendor/bin/hw/android\.hardware\.power-service\.sweet-libperfmgr		u:object_r:hal_power_default_exec:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.sweet	u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service	u:object_r:hal_dms_default_exec:s0
-
-# Dolby
-/data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
+/vendor/bin/hw/android\.hardware\.lights-service\.sweet        u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.sweet-libperfmgr u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.sweet  u:object_r:hal_fingerprint_default_exec:s0
 
 # Data files
 /data/display(/.*)?      u:object_r:display_data_file:s0
